@@ -15,6 +15,10 @@ app.use(cors());
 app.use(express.json());
 app.use(router);
 
+app.get("/",(req,res)=>{
+    res.json("server start");
+})
+
 app.listen(port,()=>{
     console.log(`server is start port number ${port}`);
 
