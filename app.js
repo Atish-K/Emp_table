@@ -14,7 +14,6 @@ const port = process.env.PORT || 8003;
 app.use(cors());
 app.use(express.json());
 app.use(router);
-app.use("/files",express.static(".public/files"))
 
 app.listen(port,()=>{
     console.log(`server is start port number ${port}`);
